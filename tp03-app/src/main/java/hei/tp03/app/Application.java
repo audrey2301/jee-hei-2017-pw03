@@ -63,7 +63,7 @@ public class Application {
                 System.out.println("Ajout du produit " + nomProduit + " à la commande");
                 produits.add(new Produit(nomProduit, commande));
             }
-            commande.setProduits(produits);
+            commande.setProduit(produits);
         }
     }
 }
