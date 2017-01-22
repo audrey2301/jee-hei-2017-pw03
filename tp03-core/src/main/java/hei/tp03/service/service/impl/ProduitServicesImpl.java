@@ -30,4 +30,9 @@ public class ProduitServicesImpl implements ProduitService {
     public List<Produit> findAll() {
         return produitDao.findAll();
     }
+
+    @Override
+    public List<Produit> findByCommande(int id) {
+        return findByCommande(id);
+    }
 }

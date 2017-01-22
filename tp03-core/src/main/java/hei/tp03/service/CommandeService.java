@@ -11,4 +11,7 @@ public interface CommandeService {
     Commande saveCommande(Commande commande);
 
     List<Commande> findAll();
+
+    //On crée une méthode pour trouver les commandes selon l'id des clients
+    List<Commande> findByClient(int id);
 }

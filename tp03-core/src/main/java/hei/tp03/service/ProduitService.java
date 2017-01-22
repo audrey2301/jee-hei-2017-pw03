@@ -15,4 +15,7 @@ public interface ProduitService {
     Produit saveProduit(Produit produit);
 
     List<Produit> findAll();
+
+    //On crée une méthode qui trouve le produit selon l'id de la commande
+    List<Produit> findByCommande(int id);
 }

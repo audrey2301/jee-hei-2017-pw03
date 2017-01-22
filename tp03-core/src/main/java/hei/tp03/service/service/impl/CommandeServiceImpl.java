@@ -13,7 +13,7 @@ import java.util.List;
 @Transactional
 public class CommandeServiceImpl implements CommandeService {
 
-    @Inject
+        @Inject
     private CommandeDao commandeDao;
 
     @Override
@@ -29,5 +29,10 @@ public class CommandeServiceImpl implements CommandeService {
     @Override
     public List<Commande> findAll() {
         return commandeDao.findAll();
+    }
+
+    @Override
+    public List<Commande> findByClient(int id) {
+        return findByClient(id);
     }
 }
